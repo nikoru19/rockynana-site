@@ -1,12 +1,11 @@
 backend:
   name: auth0
-  domain: "${AUTH0_DOMAIN}"
-  client_id: "${AUTH0_CLIENT_ID}"
-  client_secret: "${AUTH0_CLIENT_SECRET}"
-  branch: main   # your default branch
+  domain: "${AUTH0_DOMAIN}"        # Auth0 Tenant Domain
+  client_id: "${AUTH0_CLIENT_ID}"  # Auth0 Application Client ID
+  branch: main                     # Default branch to commit content
 
-media_folder: "concepts/assets"   # where images will be stored
-public_folder: "/concepts/assets"
+media_folder: "concepts/assets"    # Where uploaded media will be stored in the repo
+public_folder: "/concepts/assets"  # Path used on the site
 
 collections:
   - name: "concepts"
@@ -15,10 +14,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Content", name: "body", widget: "markdown", required: true }
       - label: "Related Concepts"
         name: "related"
         widget: "list"
