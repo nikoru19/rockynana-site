@@ -1,5 +1,8 @@
 backend:
-  name: git-gateway
+  name: auth0
+  domain: "${AUTH0_DOMAIN}"
+  client_id: "${AUTH0_CLIENT_ID}"
+  client_secret: "${AUTH0_CLIENT_SECRET}"
   branch: main   # your default branch
 
 media_folder: "concepts/assets"   # where images will be stored
