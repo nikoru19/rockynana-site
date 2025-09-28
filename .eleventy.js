@@ -1,4 +1,7 @@
 module.exports = function(eleventyConfig) {
+  // Copy CMS admin folder as-is to output
+  eleventyConfig.addPassthroughCopy("admin");
+
   // Copy static assets (CSS, JS, images)
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
