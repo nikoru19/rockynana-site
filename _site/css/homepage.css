@@ -1,0 +1,190 @@
+/* HERO SECTION */
+.hero-section {
+  background-color: #ffffff;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+}
+.hero-image {
+  flex: 1;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+/* Homepage Section Spacing */
+section {
+  padding: 100px 20px;
+}
+
+
+/* Section title + description spacing */
+#why-learn h2,
+#roles h2,
+#why-rockynana h2,
+#concepts h2 {
+  margin-bottom: 24px; /* gap below title */
+}
+
+#why-learn > p,
+#roles > p,
+#why-rockynana > p,
+#concepts > p {
+  margin-bottom: 40px; /* gap below description before grid/visual */
+  max-width: 800px;    /* keep readable line length */
+  margin-left: auto;
+  margin-right: auto;  /* center the paragraph */
+}
+
+/* CONCEPTS SECTION */
+#concepts {
+  text-align: center;
+}
+
+/* BENEFITS GRID / 3 COLUMNS */
+#why-learn {
+  padding: 80px 0;
+  text-align: center; /* center all text by default */
+}
+
+#why-learn > p {
+  max-width: 800px;    /* limit width of paragraph for readability */
+  margin: 0 auto 40px; /* center horizontally and add spacing below */
+  color: #333333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;   /* fixed width */
+  margin: 40px auto 0; /* centered horizontally */
+  gap: 40px;
+  margin-top: 40px;
+}
+.benefit-item {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 38px 28px 78px 28px;
+  border-radius: 12px;
+  text-align: center;
+}
+.benefit-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 16px;
+}
+
+/* WHY ROCKYNANA */
+#why-rockynana p {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  display: block;
+}
+
+#why-rockynana  {background: #f4f4f4;}
+
+/* ROLES SECTION */
+.roles-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px; /* fixed width */
+  margin: 0 auto;    /* center container */
+  align-items: flex-start;
+}
+.roles-visual {
+  flex: 1;
+}
+.roles-visual img {
+  max-width: 100%;
+}
+.roles-list {
+  flex: 1;
+}
+.role-item {
+  background: #f9f9f9;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.role-item:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.role-item h3 {
+  padding: 20px 24px; /* more breathing room for header */
+  background-color: #ffffff;
+  margin: 0;
+}
+.role-item p {
+  padding: 16px 24px; /* more horizontal & vertical spacing */
+  display: none;      /* collapsed by default */
+  line-height: 1.6;
+}
+
+/* NEWSLETTER */
+#newsletter p {
+  margin-bottom: 32px; /* space below description */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;   /* keep text centered */
+}
+
+#newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:16px;
+}
+#newsletter input[type="email"] {
+  padding: 12px 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+/* FAQ SECTION */
+#faqs {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.faq-item {
+  margin-bottom: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-container, .roles-container, .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #newsletter input[type="email"] {
+    width: 90%;
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,218 @@
+/* ----------------------------------------
+   Concept Template Page Styles
+---------------------------------------- */
+
+/* Concept Template Page Section Spacing */
+section {
+  padding: 18px 0;
+}
+
+.concept-page-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Sidebar */
+.concept-sidebar {
+  flex: 1;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  background-color: #fafafa;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.concept-sidebar h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+
+.concept-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.concept-sidebar li {
+  margin-bottom: 12px;
+}
+
+.concept-sidebar a {
+  font-weight: 500;
+  color: #2c79c0;
+  transition: color 0.2s ease;
+}
+
+.concept-sidebar a:hover {
+  color: #0380f5;
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+  .concept-page-wrapper {
+    flex-direction: column;
+  }
+  .concept-sidebar {
+    display: none;
+  }
+}
+
+/* Main content */
+.concept-page {
+  flex: 3;
+}
+
+/* Page Title */
+.concept-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+/* Category / Tag */
+.concept-tag {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+/* Key Takeaway / Callout box */
+.concept-summary {
+  background-color: #f0f4f8;
+  border-left: 4px solid #2c79c0;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.concept-summary strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Main Markdown Content */
+.concept-details {
+  margin-bottom: 40px;
+  line-height: 1.75;
+  color: #333333;
+}
+
+.concept-details h2 {
+  font-size: 1.75rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.concept-details h3 {
+  font-size: 1.25rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.concept-details p {
+  margin-bottom: 16px;
+}
+
+/* Lists with blue bullets */
+.concept-details ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.concept-details ul li::before {
+  content: "•";
+  color: #2c79c0;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Code blocks */
+.concept-details pre {
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
+/* Images */
+.concept-details img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* See Also / Resources */
+.see-also, .resources {
+  margin-top: 40px;
+}
+
+.see-also h2, .resources h2, .quiz h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+
+.see-also ul, .resources ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.see-also li, .resources li {
+  margin-bottom: 12px;
+}
+
+.see-also a, .resources a {
+  color: #2c79c0;
+  transition: color 0.2s ease;
+}
+
+.see-also a:hover, .resources a:hover {
+  color: #0380f5;
+}
+
+/* Quick Quiz */
+.quiz ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quiz li {
+  margin-bottom: 16px;
+}
+
+.quiz details {
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.quiz summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .concept-page h1 {
+    font-size: 2rem;
+  }
+  .concept-details h2 {
+    font-size: 1.5rem;
+  }
+  .concept-details h3 {
+    font-size: 1.125rem;
+  }
+}

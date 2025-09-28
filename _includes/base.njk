@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="/css/style.css">  
+
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header>
+  <div class="nav-container container">
+    <div class="logo">
+      <a href="/">rockynana</a>
+    </div>
+
+    <!-- Desktop nav links -->
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/concepts/">Concepts</a>
+      <a href="mailto:contact@rockynana.com">Contact Us</a>
+    </nav>
+
+    <!-- Mobile burger -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/concepts/">Concepts</a>
+    <a href="mailto:contact@rockynana.com">Contact Us</a>
+  </div>
+</header>
+
+  <!-- Main Content (injected per-page) -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container text-center">
+    © 2025 rockynana – Cybersecurity for Beginners
+  </div>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+---
+title: "Cybersecurity Concepts Hub"
+---
+
+{% extends "base.njk" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="/css/concept_hub.css">
+{% endblock %}
+
+{% block content %}
+<main class="concepts-hub">
+  <h1>Cybersecurity Concepts Hub</h1>
+  <p>Explore beginner-friendly cybersecurity concepts, tools, and techniques. Concepts are organized by category for easy browsing.</p>
+
+  <div class="concept-columns">
+
+    <!-- Categories Column -->
+    <div class="concept-categories">
+      {% set categories = collections.categories %}
+      {% for category in categories %}
+        <section class="concept-category">
+          <h2>{{ category }}</h2>
+          <ul class="concept-list">
+            {% for concept in collections.concept %}
+              {% if concept.data.category == category %}
+                <li class="concept-item">
+                  <span class="concept-title">{{ concept.data.title }}</span>
+                  {% if concept.data.summary %}
+                    <p class="concept-summary">{{ concept.data.summary }}</p>
+                  {% endif %}
+                  <a class="concept-arrow" href="{{ concept.url }}">→</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </section>
+      {% endfor %}
+    </div>
+
+  </div>
+</main>
+{% endblock %}

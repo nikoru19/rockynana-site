@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main   # your default branch
+
+media_folder: "concepts/assets"   # where images will be stored
+public_folder: "/concepts/assets"
+
+collections:
+  - name: "concepts"
+    label: "Concepts"
+    folder: "concepts/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Related Concepts"
+        name: "related"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+      - label: "Quick Quiz"
+        name: "quiz"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+      - label: "Resources"
+        name: "resources"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }

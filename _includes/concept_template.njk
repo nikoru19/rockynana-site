@@ -1,0 +1,91 @@
+{% extends "base.njk" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="/css/concept_post.css">
+{% endblock %}
+
+{% block content %}
+<div class="concept-page-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="concept-sidebar">
+    <h2>All Concepts</h2>
+    <ul>
+      {% for concept in collections.concept %}
+        <li>
+          <a href="{{ concept.url }}">{{ concept.data.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <article class="concept-page">
+
+    <!-- Title -->
+    <h1>{{ title }}</h1>
+
+    <!-- Category / Tag -->
+    {% if category %}
+      <p class="concept-tag">Category: {{ category }}</p>
+    {% endif %}
+
+    <!-- Key Takeaway / Summary -->
+    {% if summary %}
+      <div class="concept-summary">
+        <strong>Key Takeaway</strong>
+        <p>{{ summary }}</p>
+      </div>
+    {% endif %}
+
+    <!-- Main Markdown Content -->
+    <section class="concept-details">
+      {{ content | safe }}
+    </section>
+
+    <!-- See Also -->
+    {% if related and related | length %}
+      <section class="see-also">
+        <h2>See Also</h2>
+        <ul>
+          {% for item in related %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
+    <!-- Quick Quiz -->
+    {% if quiz and quiz | length %}
+      <section class="quiz">
+        <h2>Quick Quiz</h2>
+        <ul>
+          {% for q in quiz %}
+            <li>
+              <strong>Q:</strong> {{ q.question }}  
+              <details>
+                <summary>Show Answer</summary>
+                <p>{{ q.answer }}</p>
+              </details>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
+    <!-- Resources -->
+    {% if resources and resources | length %}
+      <section class="resources">
+        <h2>Resources</h2>
+        <ul>
+          {% for link in resources %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
+  </article>
+
+</div>
+{% endblock %}
