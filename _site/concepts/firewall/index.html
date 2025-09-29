@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firewall</title>
-  <meta name="description" content="">
+  <meta name="description" content="A firewall is a network security device that monitors and controls incoming and outgoing traffic based on security rules.">
   <link rel="stylesheet" href="/css/style.css">  
 
   
@@ -71,6 +71,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/concepts/firewall/">Firewall</a>
         </li>
       
+        <li>
+          <a href="/concepts/vpn/">VPN</a>
+        </li>
+      
     </ul>
   </aside>
 
@@ -101,16 +105,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li><strong>Network layer:</strong> Blocks traffic based on IP addresses, ports, and protocols.</li>
 <li><strong>Application layer:</strong> Filters traffic for specific applications or services.</li>
 </ul>
+<br>
 <h2>Benefits</h2>
 <ul>
 <li>Protects networks from unauthorized access</li>
 <li>Blocks malicious traffic and potential attacks</li>
 <li>Monitors and logs traffic for security auditing</li>
 </ul>
+<br>
+<h2>Different Types of Firewalls</h2>
+<h3>1. WAF (Web Application Firewall)</h3>
+<p><strong>Definition:</strong> Specialized firewall that protects <strong>web applications</strong> (websites, APIs) by filtering <strong>HTTP/HTTPS traffic</strong>.<br>
+<strong>Protects against:</strong> SQL Injection, XSS, CSRF, malicious bots.<br>
+<strong>Examples:</strong> Cloudflare WAF, AWS WAF, F5 ASM</p>
+<br>
+<h3>2. UTM (Unified Threat Management)</h3>
+<p><strong>Definition:</strong> A <strong>multi-function security device</strong> combining firewalling with other security features.<br>
+<strong>Features include:</strong> Firewall, IDS/IPS, antivirus, VPN, content filtering, spam filtering.<br>
+<strong>Use case:</strong> Simplified “all-in-one” security solution for SMBs.<br>
+<strong>Examples:</strong> Fortinet FortiGate, Sophos XG, Check Point UTM</p>
+<br>
+<h3>3. NGFW (Next-Generation Firewall)</h3>
+<p><strong>Definition:</strong> An <strong>advanced firewall</strong> that goes beyond Layer 3/4 filtering with deep inspection.<br>
+<strong>Key capabilities:</strong></p>
+<ul>
+<li>Deep Packet Inspection (DPI)</li>
+<li>Application awareness (identify apps like Facebook, Dropbox, etc.)</li>
+<li>Integrated IDS/IPS</li>
+<li>SSL/TLS decryption</li>
+<li>Threat intelligence integration<br>
+<strong>Examples:</strong> Palo Alto Networks NGFW, Cisco Firepower, Check Point NGFW</li>
+</ul>
+<br>
+<h3>4. Layer 4 &amp; Layer 7 Firewalls</h3>
+<h4>Layer 4 Firewall (Transport Layer)</h4>
+<p><strong>Definition:</strong> Filters traffic based on <strong>IP, ports, and protocols</strong>.<br>
+<strong>Use case:</strong> Basic packet filtering, access control.<br>
+<strong>Limitation:</strong> Cannot inspect the actual content of traffic.<br>
+<strong>Example:</strong> Cisco ASA (stateful firewall).</p>
+<h4>Layer 7 Firewall (Application Layer)</h4>
+<p><strong>Definition:</strong> Inspects the <strong>actual data/content</strong> inside packets.<br>
+<strong>Use case:</strong> Blocks specific applications or malicious requests (e.g., block YouTube but allow Gmail).<br>
+<strong>Example:</strong> WAFs, NGFWs with app-awareness.</p>
+<br>
+<h3>Quick Summary</h3>
+<ul>
+<li><strong>WAF</strong> → Web app protection (HTTP/S attacks).</li>
+<li><strong>UTM</strong> → All-in-one security (firewall + IDS/IPS + AV, etc.).</li>
+<li><strong>NGFW</strong> → Smarter, app-aware firewall with deep inspection.</li>
+<li><strong>Layer 4</strong> → Basic filtering (IP/port).</li>
+<li><strong>Layer 7</strong> → Advanced filtering (application data).</li>
+</ul>
 
     </section>
 
     <!-- See Also -->
+    
+      <section class="see-also">
+        <h2>See Also</h2>
+        <ul>
+          
+            <li><a href="/concepts/vpn/">VPN</a></li>
+          
+        </ul>
+      </section>
     
 
     <!-- Quick Quiz -->
