@@ -17,10 +17,10 @@ quiz:
   - question: "Can firewalls act as VPN concentrators?"
     answer: "Yes. Many modern firewalls have built-in VPN functionality and can manage multiple secure connections."
 resources:
-  - title: "Cisco: Site-to-Site VPN Overview"
-    url: "https://www.cisco.com/c/en/us/td/docs/security/vpnclient/"
-  - title: "Cloudflare: What is a VPN?"
-    url: "https://www.cloudflare.com/learning/security/glossary/what-is-vpn/"
+  - title: "Fortinet - Site-to-Site VPN Overview"
+    url: "https://www.fortinet.com/resources/cyberglossary/what-is-site-to-site-vpn"
+  - title: "Cloudflare - What is a VPN?"
+    url: "https://www.cloudflare.com/learning/access-management/what-is-a-vpn/"
 ---
 
 ## How VPNs Work
