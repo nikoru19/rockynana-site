@@ -2,7 +2,7 @@
 title: "SASE"
 description: "SASE is a cloud-delivered architecture that combines wide area networking (WAN) with network security functions to provide secure and optimized access for users, regardless of location."
 category: "Network Security"
-summary: "SASE (Secure Access Service Edge) merges SD-WAN and network security services into a single, provider-managed solution, enabling secure access for remote workers, branch offices, and HQs without relying solely on on-premises security appliances."
+summary: "SASE is a cloud-delivered architecture that combines networking and security, letting users connect safely from anywhere."
 related:
   - title: "VPN"
     url: "/concepts/vpn/"
