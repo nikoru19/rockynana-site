@@ -12,8 +12,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SD-WAN</title>
-  <meta name="description" content="SD-WAN is a virtual WAN architecture that uses software to manage connectivity, traffic, and security across wide area networks.">
+  <title>SASE</title>
+  <meta name="description" content="SASE is a cloud-delivered architecture that combines wide area networking (WAN) with network security functions to provide secure and optimized access for users, regardless of location.">
   <link rel="stylesheet" href="/css/style.css">  
 
   
@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <article class="concept-page">
 
     <!-- Title -->
-    <h1>SD-WAN</h1>
+    <h1>SASE</h1>
 
     <!-- Category / Tag -->
     
@@ -101,46 +101,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
       <div class="concept-summary">
         <strong>Key Takeaway</strong>
-        <p>SD-WAN is a virtual WAN architecture that uses software to manage connectivity, traffic, and security across wide area networks.</p>
+        <p>SASE (Secure Access Service Edge) merges SD-WAN and network security services into a single, provider-managed solution, enabling secure access for remote workers, branch offices, and HQs without relying solely on on-premises security appliances.</p>
       </div>
     
 
     <!-- Main Markdown Content -->
     <section class="concept-details">
-      <h2>What is Software-Defined Wide Area Network (SD-WAN)</h2>
-<ul>
-<li>A <strong>virtual WAN architecture</strong> that allows organizations to securely connect users to applications using <strong>multiple connection types</strong> (MPLS, broadband, LTE, 5G).</li>
-<li>Uses <strong>software-defined control</strong> to manage traffic routing and security.</li>
-</ul>
+      <h2>How SASE Works</h2>
+<p>SASE integrates <strong>networking and security functions</strong> into a service delivered from distributed provider data centers (sometimes called points of presence, or PoPs).<br>
+Instead of routing all traffic back through a company’s HQ firewall, users connect to the nearest SASE PoP, where security checks are applied before sending traffic to its destination.</p>
 <br>
-<h2>Key Features</h2>
+<p><strong>Key components usually include:</strong></p>
 <ul>
-<li><strong>Dynamic Path Selection:</strong> Routes traffic based on performance, cost, or policy.</li>
-<li><strong>Encrypted Tunnels:</strong> Typically uses IPSec tunnels for secure branch-to-branch and branch-to-cloud communication.</li>
-<li><strong>Centralized Management:</strong> Network admins configure and monitor WANs from a central controller.</li>
-<li><strong>Application Awareness:</strong> Prioritizes critical apps like VoIP or video conferencing.</li>
+<li><strong>SD-WAN:</strong> Optimizes network routing and prioritizes critical traffic.</li>
+<li><strong>Firewall-as-a-Service (FWaaS):</strong> Provides traditional firewall protection without on-premise hardware.</li>
+<li><strong>Secure Web Gateway (SWG):</strong> Filters harmful websites and content.</li>
+<li><strong>Zero Trust Network Access (ZTNA):</strong> Ensures users and devices are authenticated before accessing resources.</li>
+<li><strong>Cloud Access Security Broker (CASB):</strong> Controls access to SaaS/cloud applications.</li>
 </ul>
 <br>
 <h2>Benefits</h2>
 <ul>
-<li><strong>Cost Savings:</strong> Reduces reliance on expensive MPLS links by using broadband.</li>
-<li><strong>Performance:</strong> Improves application performance with intelligent routing.</li>
-<li><strong>Security:</strong> Includes built-in encryption, firewalls, and sometimes IDS/IPS.</li>
-<li><strong>Flexibility:</strong> Easily connects branches, remote workers, and multi-cloud environments.</li>
+<li><strong>Consistent security everywhere:</strong> Same protection whether at HQ, branch office, or working remotely.</li>
+<li><strong>Lower latency:</strong> Traffic doesn’t need to backhaul through HQ.</li>
+<li><strong>Scalability:</strong> Easy to add new users or locations without new appliances.</li>
+<li><strong>Centralized management:</strong> One unified security and networking policy.</li>
 </ul>
 <br>
-<h2>Use Cases</h2>
-<ul>
-<li>Enterprises with multiple branch offices.</li>
-<li>Organizations adopting <strong>cloud-first strategies</strong>.</li>
-<li>Companies needing secure, high-performance WAN for remote workforces.</li>
-</ul>
+<h2>SASE in Practice</h2>
+<p><strong>Remote Worker → SASE PoP → Internet or HQ</strong><br>
+Remote employees connect securely to the nearest provider location, which enforces policies before traffic continues to the HQ network or cloud apps.</p>
+<p><strong>Branch Office → SASE PoP → Cloud Services</strong><br>
+Branches use SASE instead of expensive MPLS links to HQ, getting direct, secure connections to SaaS apps like Microsoft 365 or Salesforce.</p>
 <br>
 <h2>Quick Summary</h2>
 <ul>
-<li><strong>SD-WAN</strong> = Software-defined control + multiple link types + security.</li>
-<li>Provides <strong>better performance, security, and cost-efficiency</strong> compared to traditional WAN.</li>
-<li>Often works alongside <strong>SASE</strong> for cloud-delivered security.</li>
+<li><strong>SASE = SD-WAN + Security-as-a-Service.</strong></li>
+<li>Shifts from <strong>HQ-based security</strong> to <strong>distributed security checkpoints</strong> closer to the user.</li>
+<li>Ideal for organizations with <strong>many remote workers and branch o</strong></li>
 </ul>
 
     </section>
@@ -153,6 +151,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
             <li><a href="/concepts/vpn/">VPN</a></li>
           
+            <li><a href="/concepts/sd-wan/">SD-WAN</a></li>
+          
+            <li><a href="/concepts/firewall/">Firewall</a></li>
+          
         </ul>
       </section>
     
@@ -164,42 +166,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul>
           
             <li>
-              <strong>Q:</strong> What is the main purpose of SD-WAN?  
+              <strong>Q:</strong> What does SASE stand for?  
               <details>
                 <summary>Show Answer</summary>
-                <p>To provide secure, efficient, and flexible WAN connectivity using software-defined control.</p>
+                <p>Secure Access Service Edge.</p>
               </details>
             </li>
           
             <li>
-              <strong>Q:</strong> How does SD-WAN differ from traditional WANs like MPLS?  
+              <strong>Q:</strong> What two main technologies does SASE combine?  
               <details>
                 <summary>Show Answer</summary>
-                <p>SD-WAN uses multiple connection types (e.g., broadband, LTE, MPLS) and intelligently routes traffic, offering more flexibility and lower cost.</p>
+                <p>SD-WAN and network security services (like firewall, zero-trust, and secure web gateway).</p>
               </details>
             </li>
           
             <li>
-              <strong>Q:</strong> Does SD-WAN often rely on tunneling?  
+              <strong>Q:</strong> How does SASE differ from traditional HQ-based security models?  
               <details>
                 <summary>Show Answer</summary>
-                <p>Yes, SD-WAN typically uses IPSec tunnels to securely connect branch offices and remote sites.</p>
-              </details>
-            </li>
-          
-            <li>
-              <strong>Q:</strong> What are the main benefits of SD-WAN?  
-              <details>
-                <summary>Show Answer</summary>
-                <p>Lower cost, improved performance, integrated security, and simplified management for distributed networks.</p>
-              </details>
-            </li>
-          
-            <li>
-              <strong>Q:</strong> What is the key difference between SD-WAN and a traditional VPN?  
-              <details>
-                <summary>Show Answer</summary>
-                <p>VPN secures a connection between two points, while SD-WAN securely manages and optimizes multiple WAN links across distributed sites.</p>
+                <p>Instead of forcing all traffic through HQ, SASE applies security controls in distributed data centers closer to the user.</p>
               </details>
             </li>
           
@@ -213,9 +199,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>Resources</h2>
         <ul>
           
-            <li><a href="https://www.fortinet.com/resources/cyberglossary/sd-wan-explained" target="_blank">Fortinet – SD-WAN Explained</a></li>
+            <li><a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-secure-access-service-edge-sase.html" target="_blank">Cisco – What Is SASE?</a></li>
           
-            <li><a href="https://www.cloudflare.com/learning/network-layer/what-is-an-sd-wan/" target="_blank">Cloudflare – What is SD-WAN</a></li>
+            <li><a href="https://www.cloudflare.com/learning/access-management/what-is-sase/" target="_blank">Cloudflare – Understanding SASE</a></li>
           
         </ul>
       </section>
