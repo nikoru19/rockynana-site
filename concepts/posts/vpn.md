@@ -9,6 +9,8 @@ permalink: "/concepts/{{ title | slug }}/"
 related:
   - title: "Firewall"
     url: "/concepts/firewall/"
+  - title: "VPN"
+    url: "/concepts/vpn/"
 quiz:
   - question: "What is the main purpose of a VPN?"
     answer: "To create a secure, encrypted tunnel for traffic between devices and networks."

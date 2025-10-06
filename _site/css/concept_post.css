@@ -153,6 +153,53 @@ section {
   margin: 16px 0;
 }
 
+/* Ordered lists styling */
+.concept-details ol {
+  list-style-position: inside; /* numbers appear inside the padding box */
+  margin-bottom: 16px;
+}
+
+.concept-details ol li {
+  margin-bottom: 8px;           /* spacing between items */
+}
+
+/* Tables */
+
+.concept-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.concept-details th,
+.concept-details td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.concept-details th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+  color: #333333;
+}
+
+.concept-details tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.concept-details tr:hover {
+  background-color: #f0f4f8;
+}
+
+.concept-details caption {
+  caption-side: bottom;
+  font-size: 0.85rem;
+  color: #666666;
+  margin-top: 8px;
+}
+
 /* See Also / Resources */
 .see-also, .resources {
   margin-top: 40px;

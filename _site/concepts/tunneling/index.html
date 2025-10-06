@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NT723ZJ4');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tunneling</title>
+  <meta name="description" content="Tunneling protects data in transit by encrypting and encapsulating packets, creating secure communication paths for VPNs, remote access, and site-to-site connections.">
+  <link rel="stylesheet" href="/css/style.css">  
+
+  
+<link rel="stylesheet" href="/css/concept_post.css">
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT723ZJ4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- HEADER / NAV -->
+<header>
+  <div class="nav-container container">
+    <div class="logo">
+      <a href="/">rockynana</a>
+    </div>
+
+    <!-- Desktop nav links -->
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/concepts/">Concepts</a>
+      <a href="mailto:contact@rockynana.com">Contact Us</a>
+    </nav>
+
+    <!-- Mobile burger -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/concepts/">Concepts</a>
+    <a href="mailto:contact@rockynana.com">Contact Us</a>
+  </div>
+</header>
+
+  <!-- Main Content (injected per-page) -->
+  <main>
+    
+<div class="concept-page-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="concept-sidebar">
+    <h2>All Concepts</h2>
+    <ul>
+      
+        <li>
+          <a href="/concepts/firewall/">Firewall</a>
+        </li>
+      
+        <li>
+          <a href="/concepts/vpn/">VPN</a>
+        </li>
+      
+        <li>
+          <a href="/concepts/sd-wan/">SD-WAN</a>
+        </li>
+      
+        <li>
+          <a href="/concepts/sase/">SASE</a>
+        </li>
+      
+        <li>
+          <a href="/concepts/tunneling/">Tunneling</a>
+        </li>
+      
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <article class="concept-page">
+
+    <!-- Title -->
+    <h1>Tunneling</h1>
+
+    <!-- Category / Tag -->
+    
+      <p class="concept-tag">Category: Network Security</p>
+    
+
+    <!-- Key Takeaway / Summary -->
+    
+      <div class="concept-summary">
+        <strong>Key Takeaway</strong>
+        <p>Tunneling is the process of creating a secure, encrypted path for data to travel across untrusted networks.</p>
+      </div>
+    
+
+    <!-- Main Markdown Content -->
+    <section class="concept-details">
+      <h2>What Is Tunneling?</h2>
+<p><strong>Tunneling</strong> is the process of <strong>encapsulating one network protocol inside another</strong> to securely transmit data across an <strong>untrusted network</strong> such as the Internet.</p>
+<p>It creates a <strong>protected “tunnel”</strong> that hides the original data, helping ensure <strong>confidentiality</strong>, <strong>integrity</strong>, and <strong>secure access</strong>.</p>
+<br>
+<h2>Why Tunneling Matters</h2>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Protection</strong></td>
+<td>Encrypts and encapsulates packets so attackers can’t read or alter them.</td>
+</tr>
+<tr>
+<td><strong>Secure Remote Access</strong></td>
+<td>Allows users to safely connect to internal networks from anywhere.</td>
+</tr>
+<tr>
+<td><strong>Safe Use of Public Networks</strong></td>
+<td>Protects traffic on insecure Wi-Fi or shared connections.</td>
+</tr>
+<tr>
+<td><strong>Inter-Office Security</strong></td>
+<td>Connects branch offices over public Internet securely.</td>
+</tr>
+<tr>
+<td><strong>Protocol Compatibility</strong></td>
+<td>Lets older or incompatible protocols pass through modern networks.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2>How Tunneling Works (Simplified)</h2>
+<ol>
+<li>The original packet (your data) is <strong>wrapped</strong> inside another packet.</li>
+<li>The outer packet travels through the Internet securely.</li>
+<li>At the destination (VPN server, for example), the outer packet is <strong>removed</strong>, revealing the original one.</li>
+</ol>
+<p>Think of it like sending a <strong>sealed envelope inside another envelope</strong>. Even if someone sees the outer one, they can’t read the real message inside.</p>
+<br>
+<h2>Common Tunneling Protocols</h2>
+<table>
+<thead>
+<tr>
+<th>Protocol</th>
+<th>OSI Layer</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IPsec</strong></td>
+<td>Network Layer</td>
+<td>Encrypts IP packets; used in site-to-site and remote-access VPNs.</td>
+</tr>
+<tr>
+<td><strong>SSL/TLS</strong></td>
+<td>Transport Layer</td>
+<td>Used in HTTPS and SSL VPNs to protect sessions.</td>
+</tr>
+<tr>
+<td><strong>L2TP</strong></td>
+<td>Data Link Layer</td>
+<td>Often paired with IPsec for encryption.</td>
+</tr>
+<tr>
+<td><strong>GRE</strong></td>
+<td>Network Layer</td>
+<td>Encapsulates traffic but does <strong>not</strong> encrypt; used for routing and VPNs.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2>When Tunneling Is Most Useful</h2>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Why It’s Beneficial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Remote workers connecting to HQ</strong></td>
+<td>VPN tunnels keep all data encrypted between user and company.</td>
+</tr>
+<tr>
+<td><strong>Connecting branch offices</strong></td>
+<td>Creates secure site-to-site links over public internet.</td>
+</tr>
+<tr>
+<td><strong>Using public Wi-Fi</strong></td>
+<td>Prevents eavesdropping on unsecured networks.</td>
+</tr>
+<tr>
+<td><strong>Hybrid or cloud environments</strong></td>
+<td>Ensures safe communication between on-prem and cloud resources.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2>Summary</h2>
+<blockquote>
+<p><strong>Tunneling</strong> is vital for network security because it enables <strong>secure, encrypted communication</strong> over <strong>untrusted networks</strong>.<br>
+It protects data in transit and is the foundation of technologies like <strong>VPNs</strong>, <strong>IPsec</strong>, and <strong>SSL/TLS-based secure connections</strong>.</p>
+</blockquote>
+<br>
+<h2>Quick Recap</h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tunneling</strong></td>
+<td>Encapsulating one protocol within another for secure communication.</td>
+</tr>
+<tr>
+<td><strong>Core Benefit</strong></td>
+<td>Ensures confidentiality and integrity of data in transit.</td>
+</tr>
+<tr>
+<td><strong>Common Protocols</strong></td>
+<td>IPsec, SSL/TLS, L2TP, GRE.</td>
+</tr>
+<tr>
+<td><strong>Use Cases</strong></td>
+<td>VPNs, remote access, site-to-site connectivity, cloud integration.</td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+
+    <!-- See Also -->
+    
+      <section class="see-also">
+        <h2>See Also</h2>
+        <ul>
+          
+            <li><a href="/concepts/vpn/">VPN</a></li>
+          
+        </ul>
+      </section>
+    
+
+    <!-- Quick Quiz -->
+    
+      <section class="quiz">
+        <h2>Quick Quiz</h2>
+        <ul>
+          
+            <li>
+              <strong>Q:</strong> What is the main purpose of tunneling?  
+              <details>
+                <summary>Show Answer</summary>
+                <p>To create a secure, encrypted path for data to travel across untrusted networks.</p>
+              </details>
+            </li>
+          
+            <li>
+              <strong>Q:</strong> Which protocols are commonly used for tunneling?  
+              <details>
+                <summary>Show Answer</summary>
+                <p>IPsec, SSL/TLS, GRE, and L2TP.</p>
+              </details>
+            </li>
+          
+        </ul>
+      </section>
+    
+
+    <!-- Resources -->
+    
+      <section class="resources">
+        <h2>Resources</h2>
+        <ul>
+          
+            <li><a href="https://www.cloudflare.com/learning/network-layer/what-is-tunneling/" target="_blank">Cloudflare – What Is Tunneling?</a></li>
+          
+        </ul>
+      </section>
+    
+
+  </article>
+
+</div>
+
+  </main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container text-center">
+    © 2025 rockynana – Cybersecurity for Beginners
+  </div>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
