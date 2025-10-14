@@ -263,3 +263,15 @@ section {
     font-size: 1.125rem;
   }
 }
+
+/* Minimalist light grey blockquote */
+.concept-details blockquote {
+  border-left: 4px solid #e0e0e0;  /* subtle grey accent */
+  background-color: #f9f9f9;       /* very light grey background */
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  color: #666666;                  /* muted grey text */
+  font-style: italic;
+  line-height: 1.7;
+}
